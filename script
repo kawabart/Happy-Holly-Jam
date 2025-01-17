@@ -1,0 +1,90 @@
+title Dinosaur Egg: Growing Pet
+author Bartłomiej "bOngO" Kawa
+homepage www.puzzlescript.net
+
+( verbose_logging )
+
+========
+OBJECTS
+========
+
+Background
+brown
+
+Wall
+darkbrown
+
+Player
+GREEN
+...00
+...0.
+...0.
+0000.
+.0.0.
+
+Egg
+white
+
+Water
+blue
+
+Exit
+yellow
+
+Blockade
+darkblue
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = Player
+E = Egg
+W = Water
+B = Blockade
+X = Exit
+& = Blockade and Exit
+
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Exit
+Player, Egg, Wall, Water, Blockade
+
+======
+RULES
+======
+
+==============
+WINCONDITIONS
+==============
+
+( No Egg )
+All Player on Exit
+
+=======
+LEVELS
+=======
+
+############
+#..........#
+#..........#
+#..........#
+#P........X#
+#..........#
+#..........#
+#..........#
+############
+
+message THE END
+message Thanks for hatching :>
+
+(v2 2024.12.19)
